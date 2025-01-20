@@ -1,0 +1,24 @@
+<%- include('partials/header.ejs') %>
+
+<h1> This is list of all the games </h1>
+
+<div class = "row">
+  <% for(var i =0; i < gameList.length ; i++){ %>
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem">
+        <img class="card-img-top" src="games/thumbnails/<%= gameList[i].thumbnailFile%>" style="height: 180px" />
+        <div class="card-body">
+        <h5 class="card-title"><%= gameList[i].title %></h5>
+        <p class="card-text">Game created by: <%= gameList[i].author %></p>
+        <a href="/game/<%=gameList[i].id%>" class="btn btn-primary">Play Game</a>
+        <a href="/game/edit/<%=gameList[i].id%>" class="btn btn-primary">Edit</a>
+        </div>
+      </div>
+    </div>
+
+
+<% } %> 
+</div>
+
+
+<%- include('partials/footer.ejs') %> 

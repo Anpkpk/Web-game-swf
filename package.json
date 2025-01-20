@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@ruffle-rs/ruffle": "^0.1.0-nightly.2024.11.21",
+    "api": "^6.1.2",
+    "body-parser": "^1.20.3",
+    "bootstrap": "^5.3.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-fileupload": "^1.5.1",
+    "express-session": "^1.18.1",
+    "mongodb": "5.5",
+    "mongoose": "^8.8.2",
+    "request": "^2.88.2",
+    "swfobject": "^2.2.1"
+  },
+  "name": "gamepro",
+  "version": "1.0.0",
+  "description": "GamePro Production Website",
+  "main": "webapplication.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dung",
+  "license": "ISC"
+}

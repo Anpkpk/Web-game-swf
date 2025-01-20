@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+
+
+<h1>Game: <%= title  %></h1>
+<h2>Created by: <%= author  %></h2>
+	
+ <div id="game">
+
+			<object data="/games/<%=fileName%>" width="<%= width  %>" height="<%= height  %>"></object>
+	</div>
+
+
+	<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+	<script src="/swf/ruffle.js"></script>
+	<script>
+			// Ruffle starting game
+			window.RufflePlayer = window.RufflePlayer || {};
+			const ruffle = window.RufflePlayer.newest();
+			ruffle.attach(document.getElementById('game'));
+	</script>
+    
+<%- include('partials/footer.ejs') %>  
